@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Locale;
 
 import Entities.Product;
-import Services.CalculationService;
 
 public class Program8 {
  
@@ -29,9 +28,7 @@ public class Program8 {
 				line = br.readLine();
 			}
 			
-			Product x = CalculationService.max(list);
 			System.out.println("MAX: ");
-			System.out.println(x);
 			
 			
 		}catch (IOException e) {
