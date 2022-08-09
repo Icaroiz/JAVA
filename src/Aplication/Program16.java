@@ -21,6 +21,7 @@ public class Program16 {
 		list.sort(Program16 :: compareProducts);
 		list.forEach(System.out::println);
 		
+		System.out.println();
 	}
 }
 
