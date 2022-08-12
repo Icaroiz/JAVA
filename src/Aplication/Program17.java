@@ -19,23 +19,22 @@ public class Program17 {
 		list.add(new Product("Tablet", 350.00));
 		list.add(new Product("HD", 80.90));
 		
+		list.forEach(null);
+		
+
+		}
+	}
+
+
+
+
+
 		//list.removeIf(p -> p.getPrice() >= 100); --- normal
 		//list.removeIf(new ProductPredicate()); --- interface
 		//list.removeIf(Product :: staticProductPredicate); --- Reference method com método estático
 		//list.removeIf(Product :: nonstaticProductPredicate); --- Reference method sem método estático
 		//Predicate<Product> pred = p -> p.getPrice() >= 100.0;
 		//list.removeIf(pred);
-
-		for(Product p : list) {
-			System.out.println(p);
-		}
-	}
-}
-
-
-
-
-
 
 
 
