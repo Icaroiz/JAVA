@@ -3,7 +3,7 @@ package Aplication;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.function.Predicate;
+import java.util.function.Consumer;
 
 import Entities.Product;
 
@@ -19,9 +19,6 @@ public class Program17 {
 		list.add(new Product("Tablet", 350.00));
 		list.add(new Product("HD", 80.90));
 		
-		list.forEach(null);
-		
-		System.out.println("Icaro");
 		
 
 		}
@@ -29,8 +26,8 @@ public class Program17 {
 
 
 
-
-
+		
+		//PREDICATE
 		//list.removeIf(p -> p.getPrice() >= 100); --- normal
 		//list.removeIf(new ProductPredicate()); --- interface
 		//list.removeIf(Product :: staticProductPredicate); --- Reference method com método estático
@@ -39,7 +36,15 @@ public class Program17 {
 		//list.removeIf(pred);
 
 
-
+		//CONSUMER
+		//list.forEach(new PriceUpdate()); --- criando uma classe
+		//list.forEach(Product :: staticPriceUpdate);	--- com metodo statico
+		//list.forEach(Product :: nonstaticPriceUpdate); --- sem metodo statico
+		/*double value = 1.1;
+		Consumer<Product> cons = p -> {
+		p.setPrice(p.getPrice() * value); };
+		list.forEach(cons);
+		list.forEach(System.out::println);*/
 
 
 
