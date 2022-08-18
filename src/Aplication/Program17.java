@@ -18,10 +18,11 @@ public class Program17 {
 		list.add(new Product("Notebook", 50.00));
 		list.add(new Product("Tablet", 350.00));
 		list.add(new Product("HD", 80.90));
+		list.add(new Product("Notepad", 50.00));
 		
 		ProductService ps = new ProductService();
 		
-		double sum = ps.filteredSum(list);
+		double sum = ps.filteredSum(list, p -> p.getName().charAt(0) == 'T');
 		
 		System.out.println("Sum = " + String.format("%.2f", sum));
 		
