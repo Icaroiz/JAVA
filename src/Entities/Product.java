@@ -42,11 +42,6 @@ public class Product {
 	}
 
 	@Override
-	public int hashCode() {
-		return Objects.hash(name, price);
-	}
-
-	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
