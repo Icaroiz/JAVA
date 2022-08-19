@@ -7,9 +7,7 @@ import java.util.stream.Stream;
 public class Stream_1 {
 
 	public static void main(String[] args) {
-
-		
-		
+	
 		List<Integer> list = Arrays.asList(3,4,5,10,7);
 		
 		//INTEGER
@@ -17,7 +15,6 @@ public class Stream_1 {
 		System.out.println(Arrays.toString(st1.toArray()));
 		
 		//STRING
-		
 		Stream<String> st2 = Stream.of("Maria", "Alex" , "Bob");
 		System.out.println(Arrays.toString(st2.toArray()));
 		
