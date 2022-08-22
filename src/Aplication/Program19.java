@@ -43,7 +43,8 @@ public class Program19 {
 			
 			List <String> names = list.stream()
 					.filter(p -> p.getPrice() < avg)
-					.map(p -> p.getName()).sorted(comp.reversed())
+					.map(p -> p.getName())
+					.sorted(comp.reversed())
 					.collect(Collectors.toList());
 			
 			names.forEach(System.out :: println);
@@ -54,5 +55,4 @@ public class Program19 {
 		}
 		sc.close();
 	}
-
 }
